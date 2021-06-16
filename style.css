@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+/* ---------GENERAL------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f0f0f0;
+}
+/* ------------NAVIGATION-------- */
+.navbar {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(131, 131, 131, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navlink {
+  margin: 0 6rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #021a4e;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+.navlink:hover {
+  color: #5b47fb;
+}
+.navlink i {
+  margin-right: 1.5rem;
+}
+.image {
+  position: relative;
+  margin: 0 6rem;
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 0.2rem solid transparent;
+  transition: border 0.5s ease;
+}
+.image:hover {
+  border: 0.2rem solid #5b47fb;
+}
+.image img {
+  height: 100%;
+  width: auto;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.dropdown i {
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 10rem;
+  position: absolute;
+  z-index: 10;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.4);
+}
+.dropdown-content a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #021a4e;
+  padding: 1rem;
+}
+/* --------------MAIN PAGE ------- */
+
+.main {
+  margin: auto;
+  /* background-color: gray; */
+  padding: 0 2rem;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+/* ======== CARDS ====== */
+.cards {
+  width: 100%;
+  position: relative;
+  margin-top: 12vh;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  width: 20rem;
+  height: auto;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(51, 46, 80, 0.2) 1rem 1rem 1rem;
+  transition: all 0.5s ease;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    box-shadow: rgba(17, 12, 46, 0.2)  2rem 2rem 2rem;
+    z-index: 200;
+}
+
+.card.client {
+  background-color: #007bff;
+}
+.card.sales {
+  background-color: #28a745;
+}
+.card.appointment {
+  background-color: #ffc107;
+}
+.card.staff {
+  background-color: #17a2b8;
+}
+.card i {
+  font-size: 5rem;
+  color: #fff;
+}
+.card p {
+  font-size: 3rem;
+  color: #fff;
+}
+.card span {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============TABLE==== */
+.table-appointment {
+  background-color: #fff;
+  margin-bottom: 5rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-shadow: rgba(48, 44, 68, 0.1) 2rem 2rem 2rem;
+  transition: all 0.5s ease;
+  
+}
+.table-appointment:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(48, 44, 68, 0.1) 4rem 4rem 4rem;
+    transition: all 0.5s ease;
+    z-index: 200;
+}
+
+.table-appointment table {
+  border-collapse: collapse;
+}
+.table-appointment p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.table-appointment th {
+  font-size: 2rem;
+  width: 50rem;
+  padding: 2rem 3rem;
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid #f0f0f0;
+}
+.table-appointment td {
+  font-size: 1.5rem;
+  width: 50rem;
+  padding: 2.5rem 3rem;
+  border: none;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* =============GRAPH========== */
+.chart {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom:5rem ;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(48, 44, 68, 0.1) 2rem 2rem 2rem;
+  transition: all 0.5s ease;
+}
+#chartContainer{
+    width: 100%;
+    margin: 1rem;
+    height: 400px;
+}
+.chart:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(48, 44, 68, 0.1) 4rem 4rem 4rem;
+    transition: all 0.5s ease;
+    z-index: 200;
+}
+
+/* ===== LAST SECTION ========= */
+
+
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 1100px){
+  html {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 900px){
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 700px){
+  html {
+    font-size: 52%;
+  }
+  .main {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 600px){
+  html {
+    font-size: 48%;
+  }
+}
+@media only screen and (max-width: 550px){
+  .navbar a i{
+    display: none;
+  }
+  
+  .navlink {
+    margin: 0 3rem;
+  }
+  
+}
+@media only screen and (max-width: 450px){
+  html {
+    font-size: 45%;
+  }
+  
+}

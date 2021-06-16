@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navlink"><i class="fas fa-tachometer-alt"></i> Dashboad</a>
+        <a href="#" class="navlink"><i class="fab fa-wpforms"></i> Forms</a>
+        <a href="#" class="image">
+            <img src="images/profile.jpg" alt="profile">
+        </a>
+        <div href="#" class="dropdown">
+            <i class="fas fa-angle-down display-dropdown"></i>
+            <div class="dropdown-content">
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="tab">
+        <div class="tab-header">
+            <div class="menu-icon">
+                <button id="close"><i class="fas fa-times"></i></button>
+                <button id="open"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="menu">
+                <div class="header active">Appointments</div>
+                <div class="header">Staff</div>
+                <div class="header">Tasks</div>
+                <div class="header">Client</div>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="content">
+                <!-- <h2>Appointments</h2> -->
+                <div class="control-container">
+                    <h2>Appointments</h2>
+                    <form class="appointment-form" action="">
+                        <div class="form-control">
+                            <label for="fullname">Full name</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-control">
+                            <label for="contact">Phone Number</label>
+                            <input type="tel" name="contact" id="contact">
+                        </div>
+                        <div class="form-control">
+                            <label for="order-date">Appointment Date</label>
+                            <input type="date" id="order-date" name="order-date">
+                        </div>
+                        <div class="form-control">
+                            <label for="location">Location Address</label>
+                            <input type="text" name="location" id="location" placeholder="Location">
+                        </div>
+                        <div class="form-control">
+                            <label for="hour">Hours</label>
+                            <input type="number" max="8" min="1" name="hour" id="hour" placeholder="How many hours?">
+                        </div>
+                        <div class="form-control">
+                            <label for="room">Rooms</label>
+                            <input type="number" min="1" name="room" id="room" placeholder="How many rooms?">
+                        </div>
+                        <div class="form-control">
+                            <label for="maid">Maids</label>
+                            <input type="number" max="4" min="1" name="maid" id="maid" placeholder="How many maids">
+                        </div>
+                        <div class="form-control textarea">
+                            <label for="note">Notes</label>
+                            <textarea name="note" id="note" cols="30" rows="5"
+                                placeholder="Any other information"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit" value="Submit">Submit</button>
+                            <button type="reset" value="Reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <div class="control-container">
+                    <h2>staff</h2>
+                    <form class="appointment-form" action="">
+                        <div class="form-control">
+                            <label for="fullname">Full name</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-control">
+                            <label for="contact">Phone Number</label>
+                            <input type="tel" name="contact" id="contact">
+                        </div>
+                        <div class="form-control">
+                            <label for="join-date">Join Date</label>
+                            <input type="date" id="join-date" name="join-date">
+                        </div>
+                        <div class="form-control">
+                            <label for="location">Location Address</label>
+                            <input type="text" name="location" id="location" placeholder="Location">
+                        </div>
+                        <div class="form-control">
+                            <label for="role">Role</label>
+                            <input type="text" name="role" id="role">
+                        </div>
+                        <div class="form-control textarea">
+                            <label for="note">Notes</label>
+                            <textarea name="note" id="note" cols="30" rows="5"
+                                placeholder="Any other information"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit" value="Submit">Submit</button>
+                            <button type="reset" value="Reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <div class="control-container">
+                    <h2>Tasks</h2>
+                    <form class="appointment-form" action="">
+                        <div class="form-control">
+                            <label for="tname">Task name</label>
+                            <input type="text" name="tname" id="tname">
+                        </div>
+                        <div class="form-control">
+                            <label for="task">Task</label>
+                            <input type="text" name="task" id="task">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="completion-date">Completion Date</label>
+                            <input type="date" id="completion-date" name="completion-date">
+                        </div>
+                        <div class="form-control">
+                            <label for="designate">Designate</label>
+                            <input type="text" name="designate" id="designate" placeholder="Designate to">
+                        </div>
+                        <div class="form-control textarea">
+                            <label for="note">Notes</label>
+                            <textarea name="note" id="note" cols="30" rows="5"
+                                placeholder="Any other information"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit" value="Submit">Submit</button>
+                            <button type="reset" value="Reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <div class="control-container">
+                    <h2>Client</h2>
+                    <form class="appointment-form" action="">
+                        <div class="form-control">
+                            <label for="fullname">Full name</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-control">
+                            <label for="contact">Phone Number</label>
+                            <input type="tel" name="contact" id="contact">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="location">Location Address</label>
+                            <input type="text" name="location" id="location" placeholder="Location">
+                        </div>
+
+                        <div class="form-control textarea">
+                            <label for="note">Notes</label>
+                            <textarea name="note" id="note" cols="30" rows="5"
+                                placeholder="Any other information"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit" value="Submit">Submit</button>
+                            <button type="reset" value="Reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="form-script.js"></script>
+</body>
+
+</html>
